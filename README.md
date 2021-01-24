@@ -1,1 +1,0 @@
-Homebrew tap for litestream.
