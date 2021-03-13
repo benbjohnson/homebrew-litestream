@@ -1,13 +1,13 @@
 class Litestream < Formula
   desc "Streaming replication for SQLite databases"
   homepage "https://github.com/benbjohnson/litestream"
-  version "0.3.2"
+  version "0.3.3"
   license "GPL-3.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/benbjohnson/litestream/releases/download/v0.3.2/litestream-v0.3.2-darwin-amd64.zip"
-    sha256 "908214a053dbb15e35b84f1297cde095cc40e99e6bc47f35f581f00a119536b9"
+    url "https://github.com/benbjohnson/litestream/releases/download/v0.3.3/litestream-v0.3.3-darwin-amd64.zip"
+    sha256 "01aff7812af58587da5eecbaae2c11f767d87d0fc49d8119a92bdff58a008f0e"
   end
 
   def install
