@@ -3,7 +3,6 @@ class Litestream < Formula
   homepage "https://github.com/benbjohnson/litestream"
   version "0.3.6"
   license "Apache-2.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/benbjohnson/litestream/releases/download/v0.3.6/litestream-v0.3.6-darwin-amd64.zip"
