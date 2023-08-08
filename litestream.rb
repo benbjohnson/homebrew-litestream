@@ -6,7 +6,7 @@ class Litestream < Formula
 
   if OS.mac?
     url "https://github.com/benbjohnson/litestream/releases/download/v0.3.10/litestream-v0.3.10-darwin-amd64.zip"
-    sha256 "998a35cce99107c61f54d46baaae1cad87db0e8e8110578b479f9e0aea32f526"
+    sha256 "6b04f76ab9919556db6c4e4ebe5a4e636eaf9e23dd8bb011cfd4483f0fd16469"
   end
 
   def install
