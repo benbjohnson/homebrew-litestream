@@ -5,13 +5,13 @@
 class Litestream < Formula
   desc "Streaming replication for SQLite databases"
   homepage "https://litestream.io"
-  version "0.5.10"
+  version "0.5.11"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/benbjohnson/litestream/releases/download/v0.5.10/litestream-0.5.10-darwin-x86_64.tar.gz"
-      sha256 "41b6cdaf42c50e8b6ecd9f70c25ea4d1c9e4037ede17f95fc9517d145ed7ffe3"
+      url "https://github.com/benbjohnson/litestream/releases/download/v0.5.11/litestream-0.5.11-darwin-x86_64.tar.gz"
+      sha256 "7f42faf3a474b9d89f649a1f160b8c55a4d80e91849b1046b3276edd20696c9d"
 
       define_method(:install) do
         bin.install "litestream"
@@ -19,8 +19,8 @@ class Litestream < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/benbjohnson/litestream/releases/download/v0.5.10/litestream-0.5.10-darwin-arm64.tar.gz"
-      sha256 "72364ad98cbf7af088d4d92d5ddaa26db464d989b462e569959b863069b2a281"
+      url "https://github.com/benbjohnson/litestream/releases/download/v0.5.11/litestream-0.5.11-darwin-arm64.tar.gz"
+      sha256 "ed96599f041b65d798b705c6029f7673e641df3bf6b9ea21d6ce536f44a2ff5a"
 
       define_method(:install) do
         bin.install "litestream"
@@ -31,24 +31,24 @@ class Litestream < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benbjohnson/litestream/releases/download/v0.5.10/litestream-0.5.10-linux-x86_64.tar.gz"
-      sha256 "61d664319ecb8b3be3c98a56e3dc4f725ceff4d82af3bfaa7d051034dff804fb"
+      url "https://github.com/benbjohnson/litestream/releases/download/v0.5.11/litestream-0.5.11-linux-x86_64.tar.gz"
+      sha256 "2f80fdb6b0a0ff7a116ee37adf02d3de8e977ef76e052b28a6690218f0f7ab55"
       define_method(:install) do
         bin.install "litestream"
         etc.install "etc/litestream.yml" => "litestream.yml"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/benbjohnson/litestream/releases/download/v0.5.10/litestream-0.5.10-linux-armv6.tar.gz"
-      sha256 "18768f1130a99811158ca4f60734b2e6ca83f49b3a6922545cfddab42e96c9da"
+      url "https://github.com/benbjohnson/litestream/releases/download/v0.5.11/litestream-0.5.11-linux-armv6.tar.gz"
+      sha256 "9a6b69b627fcbd420438184e7db5c21e30664583e2650a1fdcbe16b9ee3e0a9d"
       define_method(:install) do
         bin.install "litestream"
         etc.install "etc/litestream.yml" => "litestream.yml"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benbjohnson/litestream/releases/download/v0.5.10/litestream-0.5.10-linux-arm64.tar.gz"
-      sha256 "6c2c0ad4eeb634243f3cfb27dc7b60672456ff256f560773b7b1fe74625832e4"
+      url "https://github.com/benbjohnson/litestream/releases/download/v0.5.11/litestream-0.5.11-linux-arm64.tar.gz"
+      sha256 "ba0fe964f77bfb96d3e34987522fd358ebb9270f71cc3d59ee735fb3d96e386f"
       define_method(:install) do
         bin.install "litestream"
         etc.install "etc/litestream.yml" => "litestream.yml"
