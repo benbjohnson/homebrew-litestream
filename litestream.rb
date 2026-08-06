@@ -56,6 +56,14 @@ class Litestream < Formula
     end
   end
 
+  service do
+    run [opt_bin/"litestream", "replicate"]
+    keep_alive true
+    working_dir HOMEBREW_PREFIX
+    log_path var/"log/litestream.log"
+    error_log_path var/"log/litestream.log"
+  end
+
   test do
     system "#{bin}/litestream", "version"
   end
